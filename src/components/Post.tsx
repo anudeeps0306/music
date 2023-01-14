@@ -7,9 +7,6 @@ const Post = (props: Props) => {
   return (
     <div style={{display:"flex",columnGap:"2rem"}}>
         <Posts />
-        <Posts />
-        <Posts />
-        <Posts />
     </div>
   )
 }
