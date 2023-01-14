@@ -3,6 +3,7 @@ import axios, { AxiosRequestConfig } from 'axios';
 import {useState,useEffect} from 'react'
 import ArtistCard from './ArtistCard'
 import TrackCard from './TrackCard';
+import api_key from '../variables/api_key';
 
 
 
@@ -49,7 +50,7 @@ const Posts: React.FC<Props> = () => {
         url: 'https://shazam.p.rapidapi.com/search',
         params: {term: 'kiss the rain', ale: 'en-US', offset: '0', limit: '5'},
         headers: {
-          'X-RapidAPI-Key': 'cdc5759467msh1d3c95c2d5e51dbp15ff6fjsnf40caf25cc62',
+          'X-RapidAPI-Key': api_key,
           'X-RapidAPI-Host': 'shazam.p.rapidapi.com'
         }
     };
